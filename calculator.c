@@ -1,3 +1,6 @@
+// Cosmas Itamala
+// ENE212-0088/2020
+
 #include <stdio.h>
 
 int main()
