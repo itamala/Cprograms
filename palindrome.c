@@ -1,4 +1,5 @@
-// ENE212-0263/2020, GOVEN LINYULU
+/* ENE212-0088/2020
+COSMAS ITAMALA*/
 #include <stdio.h>
 
 // Function to check if a number is palindrome

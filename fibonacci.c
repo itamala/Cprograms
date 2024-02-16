@@ -1,4 +1,5 @@
-// ENE212-0263/2020,GOVEN LINYULU
+/* ENE212-0088/2020
+COSMAS ITAMALA*/
 #include <stdio.h>
 
 void generateFibonacci(int n)
