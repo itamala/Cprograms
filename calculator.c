@@ -1,4 +1,4 @@
-// ENE212-0088/2020,COSMAS ITAMALA
+// ENE212-0263/2020 GOVEN LINYULU
 #include <stdio.h>
 
 // Function declarations
