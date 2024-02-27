@@ -4,29 +4,56 @@ ENE212-0088/2020*/
 
 int main()
 {
-    int array[10];
-    int omittedNumber = 6; // omitted Number
+    // Define an array of size 10
+    int arr[10];
 
-    // Assigning numbers in ascendind order
-    int i, j;
-    for (i = 0, j = 1; i < 10; i++)
+    // Assign values in ascending order
+    for (int i = 0; i < 9; i++)
     {
-        if (i == 5) // Omitting number at index 5
-            continue;
-        array[i] = j++;
+        arr[i] = i + 1;
     }
 
-    // Location reservation
-    int reservedIndex = 5;
-
-    // Inserting the omitted number
-    array[reservedIndex] = omittedNumber;
-
-    // Printing the array
-    printf("Array with omitted number inserted:\n");
-    for (i = 0; i < 10; i++)
+    // Print the original array
+    printf("Original array: ");
+    for (int i = 0; i < 10; i++)
     {
-        printf("%d ", array[i]);
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // Delete a number from the middle (let's delete the 5th element)
+    int deleteIndex = 4; // 0-based index
+    int deletedNumber = arr[deleteIndex];
+    for (int i = deleteIndex; i < 9; i++)
+    {
+        arr[i] = arr[i + 1];
+    }
+
+    // Reserve a location for the deleted number
+    arr[9] = 0;
+
+    // Print the array after deletion
+    printf("Array after deletion: ");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // Insert a number that was omitted (let's insert 5 back)
+    int insertIndex = 4;    // Insert at the position where we deleted earlier
+    int insertedNumber = 5; // Number that was omitted
+    for (int i = 9; i > insertIndex; i--)
+    {
+        arr[i] = arr[i - 1];
+    }
+    arr[insertIndex] = insertedNumber;
+
+    // Print the final array
+    printf("Final array: ");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d ", arr[i]);
     }
     printf("\n");
 
