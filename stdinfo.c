@@ -1,3 +1,4 @@
+/*COSMAS ITAMALA ENE212-0088/2020 */
 #include <stdio.h>
 #include <string.h>
 
